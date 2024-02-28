@@ -1,0 +1,23 @@
+{
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.6",
+        "illuminate/database": "^5.4",
+        "firebase/php-jwt": "^6.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "src/db",
+            "src/models",
+            "src/controllers",
+            "src/jwt",
+            "src/handlers",
+            "webservice"
+        ]
+    }
+}
