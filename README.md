@@ -4,6 +4,7 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
+* [Response](#response)
 <!-- * [License](#license) -->
 ## General Information
 
@@ -64,6 +65,17 @@ JSON con la siguiente estructura:
 3. Vamos a crear las tablas personas y credenciales y algunos registros. Si queremos solo el esquema de las tablas, nos dirigimos a "src/db/personas_create.php" y "src/db/credenciales_create.php" y luego cambiamos el valor de la variable $insertRows a false.
 4. Para crear las tablas, en un navegador ejecutar estas 2 rutas "http://localhost/doc24/src/db/personas_create.php" y "http://localhost/doc24/src/db/credenciales_create.php".
 5. Por ultimo, acceder a una aplicacion que permita probar API web como Postman, elige metodo POST, ingresa como URL "http://localhost/doc24/public/update-persona/{id}/{brand}" y ejecutar.
+
+## Response
+
+● status: 200  =>       {"estado":1,"mensaje":"Datos Actualizados correctamente"}
+
+● status: 400  =>       {"estado":0,"mensaje":"La peticion es incorrecta."}
+
+● status: 401  =>       {"estado":0,"mensaje":"Fallo en el token de autenticacion."}
+
+● status: 500  =>       {"estado":0,"mensaje":"Ha ocurrido un error al procesar la solicitud"}
+
 
 
 
